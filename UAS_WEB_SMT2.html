@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abyan Market</title>
+</head>
+
+<body>
+        <table align="center">
+            <tr>
+                <td align="left">
+                    <img src="gambarweb/logo1.png" alt="" width="80px">
+                </td>
+                <td align="left">
+                    <h2 style="color: blue;">Abyan Official Market</h2>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table align="center">
+            <tr align="center">
+                <td>
+                    <a href="#content" >Utama</a>
+                </td>
+                <td><a href="#produk" >Produk</a></td>
+                <td><a href="#pembelian" >Pembelian</a></td>
+                <td><a href="#profil" >Profile</a></td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td>
+                    <marquee>
+                        <h1 style="color: blue;">Selamat Datang Di Abyan Official Market, Buka Pukul 08:00-20:00</h1>
+                    </marquee>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <section id="content">
+            <table>
+                <tr>
+                    <td>
+                        <img src="gambarweb/logo.png" alt="">
+                    </td>
+                    <td>
+                        <h1>Abyan Market adalah sebuah pasar modern yang terletak di kawasan perkotaan, menawarkan berbagai produk kebutuhan sehari-hari dengan konsep yang mengutamakan kenyamanan dan kualitas. Pasar ini menggabungkan elemen tradisional dengan fasilitas modern untuk memberikan pengalaman berbelanja yang menyenangkan bagi para pelanggan.</h1>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="produk">
+            <table align="center">
+                <tr align="center">
+                    <td align="center" colspan="3">
+                        <h1>
+                            Produk Yang Kami Miliki
+                        </h1>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td> <text style="text-decoration: underline;">DAGING AYAM</text> <br>
+                      <img
+                        src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//91/MTA-38005352/brd-44261_daging-ayam-potong-karkas-broiler-0-8-0-9-kg-halal_full01.jpg"
+                        width="250px"
+                        height="300px"
+                        alt="" 
+                      /> <br>
+                      jumlah barang <input type="number" name="jmldaging" id="DA" style="width: 30px;">
+                    </td> <br>
+                    <td><text style="text-decoration: underline;">KECAP</text> <br>
+                      <img
+                        src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/6/2/3b344bb2-b7dd-4e9b-b9b4-b5c659e42ce3.jpg"
+                        width="250px"
+                        height="300px"
+                        alt=""
+                      /> <br>
+                      jumlah barang <input type="number" name="jmlkecap" id="KCP" style="width: 30px;">
+                    </td> <br>
+                    <td><text style="text-decoration: underline;">DAGING SAPI</text> <br>
+                      <img
+                        src="https://asset.kompas.com/crops/loXNzgMXFEX_3avDpy_53_3rXsU=/1x0:1000x666/750x500/data/photo/2021/07/14/60ee601a87545.jpg"
+                        width="250px"
+                        height="300px"
+                        alt=""
+                      /> <br>
+                      jumlah barang <input type="number" name="jmldgg" id="DS" style="width: 30px;">
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td><text style="text-decoration: underline;">BUAH</text> <br>
+                      <img
+                        src="https://asset-2.tstatic.net/bali/foto/bank/images/imlek-2022-jeruk-banyak-diburu-ini-daftar-harga-buah-buahan-di-swalayan-denpasar.jpg"
+                        width="250px"
+                        height="300px"
+                        alt=""
+                      /> <br>
+                      jumlah barang <input type="number" name="jmlbuah" id="BH" style="width: 30px;">
+                    </td> <br> <br>
+                    <td><text style="text-decoration: underline;">TELUR</text> <br>
+                      <img
+                        src="https://asset.kompas.com/crops/IPT6ZDh_ShCxJ7gK310N-hELv90=/100x67:900x600/1200x800/data/photo/2023/06/13/6487fe9f73030.jpg"
+                        width="250px"
+                        height="300px"
+                        alt=""
+                      /> <br>
+                      jumlah barang <input type="number" name="jmltelur" id="TLR" style="width: 30px;">
+                      <br> <input type="button" value="Simpan" name="btn2" onclick="simpan()">
+                    </td> <br> <br>
+                    <td> <text style="text-decoration: underline;">MINUMAN</text> <br>
+                      <img
+                        src="https://static.republika.co.id/uploads/images/inpicture_slide/060445800-1677566709-830-556.jpg"
+                        width="250px"
+                        height="300px"
+                        alt=""
+                      /> <br>
+                      jumlah barang <input type="number" name="jmlminuman" id="MNM" style="width: 30px;">
+                    </td>
+                  </tr>
+            </table>
+        </section>
+<br><br><br><br><br><br><br>
+    <section id="pembelian">
+        <table border="1" align="center">
+            <tr align="center">
+              <td>
+                <form name="form" method="post">
+                  <script>
+                     var data = [];
+                     var i = 0; 
+                    function proses() {
+                      var nama = document.getElementById("nama").value
+                      var alamat = document.getElementById("alamat").value
+                     alert("data telah dikrim!")
+                    }
+                    function simpan(){
+                  data[i] = {
+                daging_ayam: document.getElementById("DA").value,
+                kecap: document.getElementById("KCP").value,
+                daging_sapi: document.getElementById("DS").value,
+                buah: document.getElementById("BH").value,
+                telur: document.getElementById("TLR").value,
+                minuman: document.getElementById("MNM").value,
+            };                      
+                document.getElementById("DA").value ="";
+                document.getElementById("KCP").value = "";
+                document.getElementById("DS").value = "";
+                document.getElementById("BH").value = "";
+                document.getElementById("TLR").value = "";
+                document.getElementById("MNM").value = "";
+            i++;
+            alert("Data telah disimpan");
+        }
+        
+                    function tampil(){
+                     var $harga1 = 15000;
+                     var $harga2 = 5000;
+                     var $harga3 = 25000;
+                     var $harga4 = 5000;
+                     var $harga5 = 1500;
+                     var $harga6 = 3000;
+                     
+            var isi = "<tr><th>JENIS BARANG</th><th>QTY</th><th>HARGA</th></tr>\n";
+            for(var i = 0; i < data.length; i++){
+              var subtotal1 = $harga1 * data[i].daging_ayam;
+                                    var subtotal2 = $harga2 * data[i].kecap;
+                                    var subtotal3 = $harga3 * data[i].daging_sapi;
+                                    var subtotal4 = $harga4 * data[i].buah;
+                                    var subtotal5 = $harga5 * data[i].telur;
+                                    var subtotal6 = $harga6 * data[i].minuman;
+                                    var totalHarga = subtotal1 + subtotal2 + subtotal3 + subtotal4 + subtotal5 + subtotal6;
+
+                isi += "<tr><td>daging ayam</td><td>" + data[i].daging_ayam + "</td><td>" + subtotal1 + "</td></tr><tr><td>kecap</td><td>" + data[i].kecap + "</td><td>" + subtotal2 + "</tr><td>daging sapi</td><td>" + data[i].daging_sapi + "</td><td>"+ subtotal3 +"</td></tr>";
+                isi += "<tr><td>buah</td><td>" + data[i].buah + "</td><td>" + subtotal4 +"</td></tr><tr><td>telur</td><td>" + data[i].telur + "</td><td>" + subtotal5 +"</td></tr><td>minuman</td><td>" + data[i].minuman + "</td><td>" + subtotal6 +"</td></tr>";
+                isi += "<tr><th>IDENTITAS</th><th>PEMBELI</th></tr><tr><td>Nama Pembeli</td><td>" + document.getElementById("nama").value + "</td></tr><tr><td>Alamat Pembeli</td><td>" + document.getElementById("alamat").value + "</td></tr>"
+                isi+= "<tr><td>Total Harga Barang</td><td>" + totalHarga + "</td></tr>"
+              }
+
+            document.getElementById('hasil').innerHTML = isi;
+        
+        }
+
+                  </script>
+                  <h1>Pembelian</h1>
+                  
+                  <label>Nama : </label>
+                  <input type="text" name="nama" id="nama" autocomplete="off" /><br /><br />
+                  <label>Alamat :</label>
+                  <input type="text" name="alamat" id="alamat" autocomplete="off" />
+                  <br />
+                  <br /><br />
+                  <input type="button" value="Kirim" onclick="proses()" />
+                  <br />
+                  <br />
+                </form>
+              </td>
+            </tr>
+          </table> 
+          <table align="center">
+            <tr>
+                <td>
+                  <h1>Barang yang dibeli</h1>
+                  <input type="button" value="Tampilkan" name="btn3" onclick="tampil()">
+                  <table border="1" id="hasil">
+                    
+                </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+<br><br><br><br>
+    <section id="profil">
+        <table>
+            <tr>
+                <td>
+                    <img src="gambarweb/abyann.jpg" width="200px" alt="">
+                </td>
+                <td>
+                    <h1>Abyan Market</h1>
+                    <p>Abyan Market adalah sebuah pasar modern yang terletak di kawasan perkotaan, menawarkan berbagai produk kebutuhan sehari-hari dengan konsep yang mengutamakan kenyamanan dan kualitas. Pasar ini menggabungkan elemen tradisional dengan fasilitas modern untuk memberikan pengalaman berbelanja yang menyenangkan bagi para pelanggan.</p>
+                    <br>
+                    <p>Pembuat : Abyan Annafi Suwandi </p>
+                    <p>Kelas   : IS-1</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <table align="center">
+      <tr>
+          <td>
+              <h2>Alamat : Banjaran, Bandung</h2>
+              <h2>Telepon: +62243432432424</h2>
+              <h2>Email: Abyanmarket123@gmail.com</h2>
+          </td>
+      </tr>
+  </table>
+
+</body>
+
+</html>
